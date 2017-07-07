@@ -1,0 +1,99 @@
+header {
+  &.home-page_header {
+    min-height: 630px;
+    max-height: 630px;
+    background-image: url(../images/home_header_bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-bottom: 116px;
+    .page-information-wrapper {
+      padding-top: 160px;
+      .text-holder {
+        margin-top: 64px;
+        .main_title {
+          color: $white;
+          font-size: 35px;
+          text-transform: inherit;
+          span {
+            color: $main_green;
+          }
+        }
+        a {
+          &.download {
+            margin: 40px 0 20px 0;
+            max-width: 260px;
+            height: 60px;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: $white;
+            img {
+              height: 80%;
+            }
+            span {
+              font-size: 24px;
+              line-height: normal;
+              font-weight: normal;
+              color: $main_green;
+              text-transform: uppercase;
+            }
+          }
+        }
+      }
+      .img-holder {
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  header {
+    &.home-page_header {
+      .page-information-wrapper {
+        .text-holder {
+          h1 {
+            &.main_title {
+              font-size: 30px;
+            }
+          }
+          a {
+            &.download {
+              margin-left: auto;
+              margin-right: auto;
+              max-width: 200px;
+              height: 40px;
+              span {
+                font-size: 18px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  header {
+    &.home-page_header {
+      .page-information-wrapper {
+        .img-holder {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1199px) {
+  header {
+    &.home-page_header {
+      max-height: 100%;
+    }
+  }
+}

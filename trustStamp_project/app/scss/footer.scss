@@ -1,0 +1,153 @@
+footer {
+  padding: 80px 0;
+  background-color: $beige;
+  a {
+    transition: color 0.3s ease-in !important;
+    &:hover {
+      color: $main_green !important;
+    }
+  }
+  h3 {
+    &.title {
+      font-size: 20px;
+      text-transform: uppercase;
+      margin-bottom: 25px;
+    }
+  }
+  .container {
+    position: relative;
+    &:after {
+      position: absolute;
+      content: url("../images/footer-airplane.png");
+      top: -190px;
+      right: 100px;
+    }
+  }
+  .contact {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    img {
+      align-self: flex-start;
+      margin-bottom: 25px;
+    }
+    .link-wrap {
+      display: inline-flex;
+      width: 100%;
+      img {
+        margin-right: 15px;
+        margin-left: 5px;
+        margin-bottom: 0 !important;
+      }
+      a {
+        align-self: flex-start;
+        color: $footer-phone-link-color;
+        font-weight: 300;
+        font-size: 16px;
+      }
+      &:last-of-type {
+        margin-top: 10px;
+      }
+    }
+  }
+  .company {
+    margin-bottom: 20px;
+    ul {
+      li {
+        line-height: normal;
+        & + li {
+          margin-top: 10px;
+        }
+        a {
+          font-weight: 300;
+          font-size: 14px;
+          color: $lightGray;
+          text-transform: capitalize;
+        }
+      }
+    }
+  }
+  .more {
+    @extend .company;
+  }
+  .social {
+    margin-bottom: 20px;
+    h3 {
+      &.title {
+        margin-bottom: 18px !important;
+      }
+    }
+    ul {
+      display: inline-flex;
+      width: 100%;
+      li {
+        &:hover {
+          a > img {
+            transform: rotate(360deg);
+          }
+        }
+        a {
+          display: block;
+          img {
+            transition: transform 0.5s ease;
+          }
+        }
+        & + li {
+          margin-left: 18px;
+        }
+      }
+    }
+  }
+}
+
+p {
+  &.copyright {
+    font-weight: 300;
+    background-color: $white;
+    padding: 20px 15px;
+    max-width: 1170px !important;
+    margin: 0 auto !important;
+  }
+}
+
+@media (max-width: 767px) {
+  footer {
+    .container {
+      &:after {
+        right: 25px;
+      }
+    }
+    .contact {
+        img {
+          display: block;
+          margin-bottom: 25px !important;
+          margin: 0 auto;
+        }
+      .link-wrap {
+        justify-content: center;
+      }
+    }
+    .company {
+      h3 {
+        &.title {
+          text-align: center;
+        }
+      }
+      ul {
+        li {
+          text-align: center;
+        }
+      }
+    }
+    .social {
+      h3 {
+        &.title {
+          text-align: center;
+        }
+      }
+      ul {
+        justify-content: center;
+      }
+    }
+  }
+}

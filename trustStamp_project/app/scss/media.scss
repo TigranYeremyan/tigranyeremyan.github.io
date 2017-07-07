@@ -1,0 +1,27 @@
+@media (max-width: 767px) {
+  header {
+    .navbar {
+      background-color: $navbar-bg;
+      .navbar-collapse {
+        float: none !important;
+        background-color: $navbar-bg;
+        overflow: hidden;
+        ul {
+          &.nav {
+            li {
+              max-width: 150px;
+              margin: 0 auto;
+              a {
+                text-align: center;
+                line-height: 60px;
+              }
+              & + li {
+                margin: 0 auto;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

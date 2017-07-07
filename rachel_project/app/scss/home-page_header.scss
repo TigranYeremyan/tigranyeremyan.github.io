@@ -1,0 +1,110 @@
+header {
+  &.home-page_header {
+    background-image: url(../images/home-header-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 613px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .header-inner-text {
+      .text-holder {
+        text-align: center;
+        color: $white;
+        h1 {
+          &.name {
+            text-transform: uppercase;
+            font-size: 55px;
+            font-weight: 600;
+            font-style: normal;
+            line-height: 1;
+            margin-bottom: 30px;
+          }
+        }
+        h5 {
+          font-size: 25px;
+          font-weight: normal;
+          line-height: 1;
+          margin-bottom: 10px;
+          text-transform: capitalize;
+        }
+        a {
+          &.to-form {
+            display: block;
+            position: relative;
+            width: 43px;
+            height: 43px;
+            margin: 0 auto;
+            .arrow {
+              width: 30px;
+              height: 30px;
+              position: absolute;
+              left: 26px;
+              right: 0;
+              bottom: 0;
+              top: 50%;
+              margin: -20px 0 0 -20px;
+              transform: rotate(45deg);
+              border-left: none;
+              border-top: none;
+              border-right: 2px $white solid;
+              border-bottom: 2px $white solid;
+              &:before {
+                position: absolute;
+                left: 50%;
+                content: "";
+                width: 20px;
+                height: 20px;
+                top: 50%;
+                margin: -10px 0 0 -10px;
+                border-left: none;
+                border-top: none;
+                border-right: 1px $white solid;
+                border-bottom: 1px $white solid;
+                animation-duration: 1.3s;
+                animation-iteration-count: infinite;
+                animation-name: arrow;
+                @keyframes arrow {
+                  0% {
+                    opacity: 1;
+                  }
+                  100% {
+                    opacity: 0;
+                    transform: translate(-10px, -10px);
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 479px) {
+  header {
+    &.home-page_header {
+      .header-inner-text {
+        .text-holder {
+          text-align: center;
+          color: $white;
+          h1 {
+            &.name {
+              font-size: 45px;
+            }
+          }
+          h5 {
+            font-size: 20px;
+            font-weight: normal;
+            line-height: 1;
+            margin-bottom: 10px;
+            text-transform: capitalize;
+          }
+        }
+      }
+    }
+  }
+
+}

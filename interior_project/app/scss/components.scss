@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'AvenirLTStd-Light';
+  user-select: none;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  &:hover {
+    text-decoration: none;
+  }
+  &:focus {
+    text-decoration: none;
+  }
+}
+
+h2 {
+  &.title {
+    font-size: 40px;
+    text-transform: uppercase;
+    margin: 0;
+  }
+}
+
+.box {
+  height: 488px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}

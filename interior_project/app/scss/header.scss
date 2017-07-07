@@ -1,0 +1,99 @@
+header {
+  position: relative;
+  min-height: 832px;
+  background-image: url(../images/back.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  .navbar {
+    margin: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid $navbar-border-color !important;
+    .navbar-header {
+      .navbar-brand {
+        height: initial;
+      }
+      button {
+        margin: 25px 10px 25px 0;
+        border: 1px solid $white;
+        span {
+          background-color: $white;
+        }
+      }
+    }
+    .navbar-collapse {
+      padding: 0;
+      ul {
+        &.nav {
+          li {
+            position: relative;
+            a {
+              padding: 0 10px;
+              line-height: 80px;
+              font-size: 18px;
+              color: $white;
+              cursor: pointer;
+              text-transform: uppercase;
+              &:hover {
+                background-color: transparent;
+              }
+              &:focus {
+                background-color: transparent;
+              }
+            }
+            &.active {
+              &:after {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                height: 2px;
+                background-color: $white;
+                width: 100%;
+              }
+            }
+            &:hover {
+              &:after {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                height: 2px;
+                background-color: $white;
+                width: 100%;
+              }
+            }
+            & + li {
+              margin-left: 17px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .page-information-wrapper {
+    padding-top: 290px;
+    display: flex;
+    flex-flow: row-reverse nowrap;
+    .inner-text {
+      text-align: center;
+      flex-basis: 835px;
+      h1 {
+        margin: 0;
+        font-size: 60px;
+        color: $light-green;
+        text-transform: uppercase;
+      }
+      p {
+        color: $white;
+        font-size: 30px;
+        margin: 10px 0;
+        text-transform: inherit;
+      }
+      a {
+        font-size: 25px;
+        color: $light-green;
+      }
+    }
+  }
+}

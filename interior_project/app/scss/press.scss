@@ -1,0 +1,64 @@
+header {
+  &.press-header {
+    min-height: 242px;
+    background-image: url(../images/portfolio-header-bg.jpg);
+    .navbar {
+      z-index: 2;
+    }
+  }
+}
+
+section {
+  &.section-press {
+    margin-bottom: 140px;
+    background-color: $white;
+    .tiles-wrapper {
+      padding-top: 50px;
+      z-index: 1;
+      position: relative;
+      background-color: $white;
+      margin: 0 auto;
+      margin-top: -65px;
+      max-width: 89%;
+      height: 100%;
+      h1 {
+        font-size: 40px;
+        color: $black;
+        text-transform: capitalize;
+        margin: 0 0 100px 15px;
+      }
+      .grid {
+        height: 100%;
+        .container-fluid {
+          height: 100%;
+          .row {
+            height: 100%;
+            .item {
+              padding: 15px !important;
+              img {
+                width: 100%;
+              }
+              a {
+                display: block;
+                padding: 0 10px;
+                margin-top: 15px;
+                h2 {
+                  margin: 0 0 5px 0;
+                  color: $black;
+                  text-transform: uppercase;
+                }
+                p {
+                  margin: 0;
+                  line-height: 1;
+                  color: $contact-text-color;
+                  text-transform: capitalize;
+                }
+              }
+
+            }
+          }
+        }
+      }
+    }
+  }
+}

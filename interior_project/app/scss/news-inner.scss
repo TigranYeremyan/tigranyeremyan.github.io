@@ -1,0 +1,173 @@
+section {
+  &.section-news-inner {
+    background-color: $white;
+    .news-wrapper {
+      background-color: $white;
+      .news-inner-content {
+        z-index: 1;
+        position: relative;
+        background-color: $white;
+        margin: 0 auto;
+        margin-top: -65px;
+        max-width: 89%;
+        padding-top: 66px;
+        .row {
+          &:first-child {
+            min-height: 661px;
+            margin-bottom: 58px;
+          }
+        }
+        .text-content {
+          .title-wrapper {
+            margin-bottom: 80px;
+            border: none;
+            border-left: 1px solid $light-green;
+            padding-left: 20px;
+            h1 {
+              font-size: 34px;
+              color: $angle-color;
+              line-height: 1;
+              text-transform: uppercase;
+              margin: 3px 0 10px 0;
+            }
+            h3 {
+              font-size: 20px;
+              color: $angle-color;
+              text-transform: uppercase;
+              margin: 0;
+              font-weight: 300;
+            }
+          }
+          p {
+            font-size: 21px;
+            color: $angle-color;
+            font-weight: 300;
+            text-transform: inherit;
+            line-height: normal;
+            margin: 0;
+            &:last-of-type {
+              margin: 10px 0 40px 0;
+            }
+          }
+          span {
+            color: $angle-color;
+            margin-top: 40px;
+            font-size: 25px;
+            text-transform: capitalize;
+          }
+        }
+        .img-content {
+          img {
+            margin: 0 auto !important;
+            height: auto;
+          }
+        }
+        .news-tiles {
+          .tile {
+            min-height: 224px;
+            padding: 0;
+            &:not(:last-child) {
+              padding: 20px 20px 0 20px;
+            }
+            &.about-designers {
+              background-color: $light-green;
+              color: $angle-color;
+              h6 {
+                margin: 0;
+                font-size: 13px;
+                font-weight: 700;
+                padding-right: 89%;
+                text-transform: capitalize;
+                padding-bottom: 5px;
+                border: none;
+                border-bottom: 1px solid $sky-green;
+              }
+              p {
+                font-size: 15px;
+                font-weight: 300;
+                line-height: normal;
+                margin: 20px 0 0 0;
+              }
+            }
+            &.with-logo {
+              background-color: $news-box-color;
+              a {
+                display: block;
+                padding-bottom: 20px;
+                border: none;
+                border-bottom: 1px solid $light-green;
+              }
+              p {
+                font-size: 15px;
+                font-weight: 300;
+                color: $angle-color;
+                line-height: normal;
+                margin: 20px 0 0 0;
+              }
+            }
+            &.get-in-touch {
+              background-image: url(../images/news/news-tile-bg.jpg);
+              background-size: cover;
+              background-position: center center;
+              background-repeat: no-repeat;
+              .text-link {
+                color: $white;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                min-height: 224px;
+                h3 {
+                  margin: 0;
+                  text-transform: uppercase;
+                }
+                a {
+                  width: 200px;
+                  height: 40px;
+                  margin-top: 30px;
+                  text-transform: uppercase;
+                  font-size: 16px;
+                  border: 1px solid $white;
+                  color: $white;
+                  line-height: normal;
+                  text-align: center;
+                  padding: 10px 0;
+                }
+              }
+            }
+          }
+        }
+        .back-link {
+          margin: 40px 0;
+          a {
+            &.back {
+              width: 226px;
+              height: 50px;
+              display: flex;
+              margin-left: auto;
+              justify-content: space-around;
+              align-items: center;
+              border: 1px solid $back-link-border-color;
+              color: $angle-color;
+              border-radius: 3px;
+              transition: 0.5s ease;
+              &:hover {
+                color: $light-green;
+                border-color: $light-green;
+              }
+              i {
+                font-size: 25px;
+                line-height: 0.8;
+              }
+              span {
+                text-transform: uppercase;
+                font-size: 16px;
+                font-weight: 300;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

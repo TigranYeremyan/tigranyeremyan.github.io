@@ -1,0 +1,151 @@
+header {
+  &.about-header {
+    min-height: 242px;
+    background-image: url(../images/portfolio-header-bg.jpg);
+    .navbar {
+      z-index: 2;
+    }
+  }
+}
+
+section {
+  &.section-about {
+    background-color: $white;
+    .person-info-wrapper {
+      background-color: $white;
+      .person-description {
+        z-index: 1;
+        position: relative;
+        background-color: $white;
+        margin: 0 auto;
+        margin-top: -65px;
+        max-width: 70%;
+        .main-description {
+          max-width: 822px;
+          margin: 0 auto;
+          padding: 0 5px;
+          h1 {
+            font-size: 40px;
+            color: $black;
+            text-transform: uppercase;
+            margin: 0;
+            &:first-of-type {
+              margin: 0 0 21px 0;
+              padding-top: 28px;
+              span {
+                color: $light-green;
+              }
+            }
+            &:last-of-type {
+              margin: 0 0 47px 0;
+            }
+          }
+          p {
+            font-size: 20px;
+            color: $black;
+            line-height: normal;
+            &:nth-of-type(2) {
+              margin-bottom: 44px;
+            }
+            &:nth-of-type(3) {
+              margin: 30px 0 0 0;
+              padding-bottom: 130px;
+            }
+          }
+          img {
+            &.img-responsive {
+              display: block;
+              margin: 0 auto;
+            }
+          }
+        }
+      }
+    }
+  }
+  &.section-support {
+    margin-bottom: 0 !important;
+    min-height: 402px;
+    background-color: $light-green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .text-content {
+      color: $white;
+      max-width: 822px;
+      margin: 0 auto;
+      text-align: center;
+      h1 {
+        font-size: 55px;
+        margin: 0;
+      }
+      h3 {
+        font-size: 35px;
+        margin: 25px 0 55px 0;
+      }
+      .buttons-wrapper {
+        max-width: 434px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        a {
+          height: 58px;
+          width: 48%;
+          display: inline-flex;
+          &.support-logo-button {
+            background-color: $white;
+            background-image: url(../images/contact_button_bg.png);
+            background-position: center center;
+            background-repeat: no-repeat;
+          }
+          &.contact {
+            justify-content: center;
+            align-items: center;
+            color: $white;
+            font-size: 28px;
+            text-transform: capitalize;
+            border: 1px solid $white;
+            border-radius: 2px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 390px) {
+  section {
+    &.section-support {
+      padding: 30px 0;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  section {
+    &.section-about {
+      .person-info-wrapper {
+        .person-description {
+          .main-description {
+            h1 {
+              font-size: 30px !important;
+            }
+          }
+        }
+      }
+    }
+    &.section-support {
+      .text-content {
+        h1 {
+          font-size: 40px !important;
+        }
+        h3 {
+          font-size: 30px;
+        }
+        .buttons-wrapper {
+          display: flex;
+          justify-content: space-around !important;
+        }
+      }
+    }
+  }
+}

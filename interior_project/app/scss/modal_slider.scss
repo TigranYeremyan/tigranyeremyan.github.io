@@ -1,0 +1,382 @@
+/* Visit http://www.menucool.com/responsive-slider for instructions */
+
+#ninja-slider {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  padding-top: 30px;
+  padding-bottom: 10px;
+  margin: 0 auto;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+#ninja-slider.fullscreen {
+  background: black;
+}
+
+#ninja-slider.fullscreen #ninja-slider-prev {
+  left: -50px;
+}
+
+#ninja-slider.fullscreen #ninja-slider-next {
+  right: -50px;
+}
+
+#ninja-slider .slider-inner {
+  max-width: 700px;
+  margin: 0 auto; /*center-aligned*/
+  font-size: 0px;
+  position: relative;
+  box-sizing: border-box;
+}
+
+#ninja-slider.fullscreen .slider-inner {
+  max-width: 900px;
+  max-height: 80%;
+}
+
+#ninja-slider ul {
+  /*overflow:hidden;*/
+  position: relative;
+  list-style: none;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#ninja-slider li {
+  background-color: #111;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  font-size: 12px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+#ninja-slider li.ns-show {
+  opacity: 1;
+}
+
+/* --------- slider image ------- */
+#ninja-slider .ns-img {
+  background-color: rgba(0, 0, 0, 0.3);
+  background-size: contain; /*Note: If transitionType is zoom, it will be overridden to cover.*/
+  border-radius: 3px;
+  cursor: default;
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+/* ---------Arrow buttons ------- */
+/* The arrow button id should be: slider id + ("-prev", "-next", and "-pause-play") */
+#ninja-slider-pause-play {
+  display: none;
+}
+
+#ninja-slider-prev, #ninja-slider-next {
+  position: absolute;
+  display: inline-block;
+  width: 42px;
+  height: 56px;
+  line-height: 56px;
+  top: 50%;
+  margin-top: -28px;
+  background-color: rgba(0, 0, 0, 0.4);
+  background-color: #ccc \9
+; /*IE8 hack*/
+  backface-visibility: hidden;
+  color: white;
+  overflow: hidden;
+  white-space: nowrap;
+  user-select: none;
+  border-radius: 2px;
+  z-index: 10;
+  opacity: 0.3;
+  font-family: sans-serif;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.7s;
+}
+
+.slider-inner:hover #ninja-slider-prev, .slider-inner:hover #ninja-slider-next {
+  opacity: 1;
+}
+
+#ninja-slider-prev {
+  left: 0;
+}
+
+#ninja-slider-next {
+  right: 0;
+}
+
+/* arrows */
+#ninja-slider-prev::before, #ninja-slider-next::before {
+  position: absolute;
+  top: 17px;
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-left: 2px solid white;
+  border-top: 2px solid white;
+}
+
+#ninja-slider-prev::before {
+  transform: rotate(-45deg);
+  backface-visibility: hidden;
+  right: 4px;
+}
+
+#ninja-slider-next::before {
+  transform: rotate(135deg);
+  backface-visibility: hidden;
+  left: 4px;
+}
+
+/*pagination num within the arrow buttons*/
+#ninja-slider-prev div, #ninja-slider-next div {
+  display: none;
+}
+
+/*------ pager(nav bullets) ------*/
+/* The pager id should be: slider id + "-pager" */
+#ninja-slider-pager {
+  display: none;
+}
+
+#ninja-slider-pager, #ninja-slider-prev, #ninja-slider-next, #ninja-slider-pause-play {
+  user-select: none;
+}
+
+/*Responsive settings*/
+//@media only screen and (max-width:800px){
+//
+//  #ninja-slider-prev, #ninja-slider-next {
+//    display:none;
+//  }
+//}
+
+/* http://www.menucool.com */
+
+#thumbnail-slider {
+  transform: scale(0.7);
+  transition: transform 0.25s;
+  opacity: 0.8;
+
+  margin: 4px auto; /*center-aligned*/
+  width: 100%;
+  max-width: 780px;
+  padding: 0px 40px; /*Gives room for arrow buttons*/
+  box-sizing: border-box;
+  position: relative;
+  user-select: none;
+}
+
+#thumbnail-slider:hover {
+  transform: scale(1);
+  opacity: 1;
+}
+
+#ninja-slider.fullscreen #thumbnail-slider {
+  width: 90%;
+  max-width: 1120px;
+}
+
+#thumbnail-slider div.inner {
+  /*the followings should not be changed */
+  position: relative;
+  overflow: hidden;
+  padding: 2px 0;
+  margin: 0;
+}
+
+#thumbnail-slider div.inner ul {
+
+  /*the followings should not be changed */
+  white-space: nowrap;
+  position: relative;
+  left: 0;
+  top: 0;
+  list-style: none;
+  font-size: 0;
+  padding: 0;
+  margin: 0;
+  float: left !important;
+  width: auto !important;
+  height: auto !important;
+}
+
+#thumbnail-slider ul li {
+  opacity: 1;
+  overflow: visible;
+  display: inline-block;
+  *display: inline !important; /*IE7 hack*/
+  border: 2px solid #222;
+  margin: 0 4px; /* Spacing between thumbs*/
+  box-sizing: content-box;
+
+  text-align: center;
+  vertical-align: middle;
+  padding: 0;
+  position: relative;
+  list-style: none;
+  backface-visibility: hidden;
+
+  transition: all 0.2s;
+  transform: scale(1);
+}
+
+#thumbnail-slider ul li.active {
+  border-color: white;
+}
+
+#thumbnail-slider li:hover {
+  border-color: rgba(255, 255, 255, 0.7);
+}
+
+#thumbnail-slider .thumb {
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: block;
+  position: absolute;
+  font-size: 0;
+}
+
+/* --------- Captions ------- */
+#thumbnail-slider li > span {
+  position: absolute;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 22px;
+  bottom: 2px;
+}
+
+/* --------- navigation controls ------- */
+/* The nav id should be: slider id + ("-prev", "-next", and "-pause-play") */
+
+#thumbnail-slider-pause-play {
+  display: none;
+}
+
+/*.pause*/
+
+#thumbnail-slider-prev, #thumbnail-slider-next {
+  position: absolute;
+  background-color: none;
+  width: 40px;
+  height: 50px;
+  line-height: 50px;
+  top: 50%;
+  margin: 0;
+  margin-top: -25px;
+  color: white;
+  z-index: 10;
+  cursor: pointer;
+  opacity: 1;
+  *background-color: #ccc; /*IE7 hack*/
+}
+
+#thumbnail-slider-prev {
+  left: 0px;
+  right: auto;
+}
+
+#thumbnail-slider-next {
+  left: auto;
+  right: 0px;
+}
+
+#thumbnail-slider-next.disabled, #thumbnail-slider-prev.disabled {
+  opacity: 0.3;
+  cursor: default;
+}
+
+/* arrows */
+#thumbnail-slider-prev::before, #thumbnail-slider-next::before {
+  position: absolute;
+  top: 15px;
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-left: 3px solid #DDD;
+  border-top: 3px solid #DDD;
+}
+
+#thumbnail-slider-prev::before {
+  left: 14px;
+  transform: rotate(-45deg);
+}
+
+#thumbnail-slider-next::before {
+  right: 14px;
+  transform: rotate(135deg);
+}
+
+/*Responsive settings*/
+@media only screen and (max-width: 736px) {
+
+  #thumbnail-slider {
+    padding: 0;
+  }
+
+  #thumbnail-slider-prev, #thumbnail-slider-next {
+    display: none;
+  }
+}
+
+.modal {
+  padding-right: 0 !important;
+  &.in {
+    display: flex;
+    align-items: center;
+
+  }
+  .modal-dialog {
+    .modal-content {
+      background-color: $gray-box-bg;
+      .modal-header {
+        border-bottom: none;
+        button {
+          &.close {
+            opacity: 1;
+            color: $white;
+            text-shadow: none;
+            outline: none;
+          }
+        }
+      }
+      .modal-body {
+        #ninja-slider {
+          background: $gray-box-bg;
+          .slider-inner {
+            ul {
+              li {
+                background-color: $gray-box-bg;
+                a {
+                  background-color: transparent;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+

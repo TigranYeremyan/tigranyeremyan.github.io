@@ -1,0 +1,180 @@
+header {
+  &.contact-header {
+    min-height: 242px;
+    background-image: url(../images/portfolio-header-bg.jpg);
+    .navbar {
+      z-index: 2;
+    }
+  }
+}
+
+section {
+  &.section-contact {
+    margin-bottom: 140px;
+    background-color: $white;
+    .form-wrapper {
+      padding-top: 98px;
+      z-index: 1;
+      position: relative;
+      background-color: $white;
+      margin: 0 auto;
+      margin-top: -65px;
+      max-width: 89%;
+      .container-fluid {
+        max-width: 90%;
+        div[class^=col] {
+        margin-top: 20px;
+      }
+        h1 {
+          font-size: 40px;
+          color: $black;
+          text-transform: inherit;
+          margin: 0 0 50px 0;
+          padding-bottom: 7px;
+          border-bottom: 1px solid $contact-border-color;
+          position: relative;
+          &:before {
+            content: '';
+            position: absolute;
+            height: 2px;
+            background-color: $light-green;
+            min-width: 130px;
+            max-width: 130px;
+            left: 0;
+            bottom: 0;
+          }
+          &.contact-title {
+            color: $contact-title-color;
+          }
+        }
+        form {
+          .inputs-group {
+            width: 100%;
+            display: inline-flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            input:not([type="submit"]) {
+              margin-top: 10px;
+              border: 1px solid $contact-border-color;
+              border-top-color: $light-green;
+              flex-basis: 32%;
+              outline: none;
+              padding-left: 15px;
+              height: 50px;
+            }
+            textarea {
+              margin: 15px 0;
+              width: 100%;
+              min-height: 270px;
+              outline: none;
+              resize: vertical;
+              padding-left: 15px;
+              padding-top: 15px;
+              border: 1px solid $contact-border-color;
+              border-top-color: $light-green;
+              color: $contact-text-color;
+              font-size: 19px;
+              cursor: pointer;
+            }
+            input[type=submit] {
+              height: 54px;
+              width: 285px;
+              background-color: $light-green;
+              border: none;
+              outline: none;
+              color: $white;
+              font-size: 25px;
+              cursor: pointer;
+            }
+          }
+        }
+        p {
+          &.title {
+            margin: 0 0 32px 0;
+            font-size: 24px;
+            font-weight: 700;
+          }
+        }
+        ul {
+          &.contact {
+            li {
+              position: relative;
+              padding: 28px 0 23px 40px;
+              a {
+                display: block;
+                font-size: 22px;
+                line-height: normal;
+                color: $contact-text-color;
+                &.address {
+                  max-width: 58%;
+                }
+              }
+              i {
+                position: absolute;
+                top: 28px;
+                font-size: 25px;
+                left: 0;
+                color: $light-green;
+              }
+              &:nth-child(2) {
+                border-top: 1px solid $contact-border-color;
+                border-bottom: 1px solid $contact-border-color;
+                &:after {
+                  content: "";
+                  width: 160px;
+                  display: block;
+                  position: absolute;
+                  height: 155px;
+                  right: 0;
+                  top: 0;
+                  background-image: url(../images/contact-bg.png);
+                  background-repeat: no-repeat;
+                  background-position: 100%;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  form {
+    .inputs-group {
+      flex-direction: column;
+      input:not([type="submit"]) {
+        flex-basis: 100%;
+      }
+      input[type=submit] {
+        width: 200px !important;
+      }
+    }
+  }
+}
+
+@media (min-width: 992px)  and  (max-width: 1199px){
+  form {
+    .inputs-group {
+      flex-direction: column;
+      input:not([type="submit"]) {
+        flex-basis: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 1220px) {
+ ul {
+   &.contact {
+     li {
+       &:nth-child(2) {
+         &:after {
+           display: none !important;
+         }
+       }
+     }
+   }
+ }
+}

@@ -1,0 +1,52 @@
+@import "./rtl.sass"
+
+.tooltip
+    flex: none
+    min-height: 34px
+    position: absolute
+    top: 0
+    transform: translateY(-100%)
+    background-color: var(--white, #ffffff)
+    padding: calc(var(--spacing-1x, 8px)) calc(var(--spacing-1x, 8px) * 1.25)
+    opacity: 0
+    border-radius: 4px
+    max-width: calc(100% - (var(--spacing-1x, 8px) * 3))
+    &::before
+        content: attr(data-text)
+        display: block
+        max-width: 100%
+        overflow: hidden
+        text-overflow: ellipsis
+        white-space: nowrap
+    @media (hover: hover)
+        &::after
+            content: ""
+            position: absolute
+            left: 50%
+            bottom: 0
+            transform: translate(-50%, 100%)
+            opacity: inherit
+            transition: inherit
+            width: 0
+            height: 0
+            border-left: 7px solid transparent
+            border-right: 7px solid transparent
+            border-top: 7px solid var(--white, #ffffff)
+            background-color: var(--transparent, rgba(0, 0, 0, 0))
+        &.tooltip-center
+            left: 50%
+            transform: translate(-50%, -100%)
+        &.tooltip-block-start
+            @include dir-style(right, calc(var(--spacing-1x, 8px) * 1.5), left, 0)
+            transform: translateY(-100%)
+            &::after
+                @include dir-style(left, 100%, right, 0)
+                @include dir-style(transform, translate(-300%, 100%), transform, translate(300%, 100%))
+    &-btn
+        @media (hover: hover)
+            &:hover
+                &::before
+                    opacity: 1
+                & + .tooltip,
+                & + .tooltip::after
+                    opacity: 1

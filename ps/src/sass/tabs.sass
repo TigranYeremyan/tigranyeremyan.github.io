@@ -1,0 +1,29 @@
+@import "./rtl.sass"
+
+.tabs-wrap
+    margin-bottom: calc(var(--spacing-1x, 8px) * 2)
+
+.tab
+    position: relative
+    @include dir-style(margin-left, 10px, margin-right, 0)
+    padding: calc(var(--spacing-1x, 8px) * 1.25) var(--spacing-1x, 8px)
+    background-color: var(--transparent, rgba(0, 0, 0, 0))
+    font-size: 14px
+    transition: color .2s ease
+    &:not([aria-selected=true])
+        color: var(--darkGray, #222)
+    &[aria-selected=true]
+        color: var(--violet, #ff3591)
+    &[aria-selected=true]::after
+        content: ''
+        display: block
+        position: absolute
+        bottom: 20%
+        left: 50%
+        width: 22px
+        height: 2px
+        background-color: currentColor
+        transform: translateX(-50%)
+    @media (hover: hover)
+        &:not([aria-selected='true']):hover
+            color: var(--lightGray, #888)

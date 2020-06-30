@@ -1,0 +1,25 @@
+\:root
+    --spacing-1x: 8px
+    --font-size-1x: 14px
+    --white: #ffffff
+    --violet: #ff3591
+    --darkGray: #222
+    --lightGray: #888
+    --transparent: rgba(0, 0, 0, 0)
+    --lightBlue: #00a3ff
+    --cardTransition: .3s ease-in-out
+    --text-size: 14px
+
+@import "./tabs.sass"
+@import "./grid-item.sass"
+@import "./tooltip.sass"
+@import "./rtl.sass"
+
+.grid
+    width: calc(100% + 16px)
+    @include dir-style(margin-left, -16px, margin-right, 0)
+
+
+
+
+

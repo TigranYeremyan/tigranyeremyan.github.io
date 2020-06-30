@@ -1,0 +1,15 @@
+@mixin dir-style($prop, $value, $inverse-prop, $inverse-value)
+  html[dir=ltr] &
+    #{$prop}: $value
+  
+  html[dir=rtl] &
+    @if $inverse-value == 0
+      #{$inverse-prop}: $value
+    @else
+      #{$inverse-prop}: $inverse-value
+
+// For only transform usage
+// @include dir-style(transform, translate(20px), transform, translate(-20px))
+
+// For any of other usage
+// @include dir-style(margin-right, 20px, margin-left, 0)

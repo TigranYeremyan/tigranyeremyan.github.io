@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html dir ="ltr" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="tet here">
+    <meta name="keywords" content="text here">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.min.css">
+    <title>Tabs</title>
+</head>
+<body>
+    <div class="container">
+        <div class="tabs-wrap d-f a-i-c">
+            <span aria-hidden="true">Sort by:</span>
+            <div class="tabs d-f a-i-c" role="tablist" aria-label="Sort images by category">
+                <button class="tab" role="tab" aria-selected="true" aria-controls="recentContent" id="recentTab">
+                    RECENT
+                </button>
+                <button class="tab" tabindex="-1" role="tab" aria-selected="false" aria-controls="contentId" id="recentTab">
+                    Popular
+                </button>
+            </div>
+        </div>
+        
+        <section role="tabpanel" id="recentContent" aria-labelledby="recentTab">
+            <ul class="grid d-f f-w-w">
+                <li class="grid__item xs-w-50 sm-w-33 lg-w-25">
+                    <div class="grid__item__inner p-r" itemscope itemtype="http://schema.org/Article">
+                        <div hidden itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+                            <meta itemprop="name" content="PicsArt">
+                            <div itemprop="logo" itemscope="" itemtype="https://schema.org/ImageObject">
+                                <meta itemprop="url" content="https://picsart.com/images/picsart.png">
+                            </div>
+                        </div>
+                        <meta itemprop="author" content="living4picklez">
+                        <meta itemprop="url" content="https://picsart.com/i/image-331179751080201">
+                        <meta itemprop="datePublished" content="2020-06-30T02:22:31.892Z">
+                        <meta itemprop="headline" content="#freetoedit simpsons backround">
+                        <a class="grid__item__top-link w-100 f-z-1x touch-hidden" itemprop="author" content="living4picklez" href="#"> Text </a>
+                        <!-- Title attribute isn't accessible, so aria-label is a helper here for describing link -->
+                        <a class="p-r d-b grid__item__link" href="#" title="Descriptive text here" aria-label="Descriptive text here">  
+                            <div class="grid__item__pic-wrap p-r" itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
+                                <picture class="d-b grid__item__picture p-a">
+                                    <source srcset="./img/cover.webp" type="image/webp">
+                                    <img class="grid__item__img p-a" src="./img/cover-1x.jpg" srcset="./img/cover-1x.jpg 1x, ./img/cover-2x.jpg 2x" alt="complex complexedit complexbackground complexeditbackground background freetoedit">
+                                </picture>
+                                <meta itemprop="contentUrl" content="https://cdn141.picsart.com/331179751080201.jpg?type=webp&amp;to=min&amp;r=480">
+                                <meta itemprop="datePublished" content="2020-06-30T02:22:31.892Z">
+                                <meta itemprop="author" content="living4picklez">
+                                <meta itemprop="url" content="https://picsart.com/i/image-331179751080201">
+                                <meta itemprop="embedUrl" content="https://picsart.com/e/331179751080201">
+                                <meta itemprop="width" content="1948">
+                                <meta itemprop="height" content="3463">
+                                <meta itemprop="name" content="#freetoedit simpsons backround">
+                                <meta itemprop="representativeOfPage" content="True">
+                            </div>
+                        </a>
+                        <div class="grid__item__bottom-content p-a d-f j-c-s-b w-100 touch-hidden">
+                            <div class="grid__item__share__block d-f j-c-c a-i-c">
+                                <svg width="31px" height="28px" viewBox="0 0 31 28" focusable="false" aria-hidden="true"> 
+                                    <use xlink:href="./img/symbol-sprite.svg#ShareGrid"></use>
+                                </svg>
+                            </div>
+                            <div class="grid__item__share__menu-wrap touch-hidden w-100 p-a d-f a-i-c j-c-s-b">
+                                <ul class="grid__item__social__share d-f a-i-c">
+                                    <li class="grid__item__social__share__item fb"></li>
+                                    <li class="grid__item__social__share__item mail"></li>
+                                    <li class="grid__item__social__share__item pinterest"></li>
+                                    <li class="grid__item__social__share__item reddit"></li>
+                                    <li class="grid__item__social__share__item twitter"></li>
+                                </ul>
+                                <a href="#" class="grid__item__preview-link" aria-label="Descriptive text here">
+                                    <svg width="19px" height="19px" viewBox="0 0 19 19"> 
+                                        <use xlink:href="./img/symbol-sprite.svg#plus"></use> 
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="grid__item__wishlist__block tooltip-btn tooltip-center p-r d-f j-c-c a-i-c">
+                                <button class="grid__item__wishlist-btn" aria-label="Add to wishlist">
+                                    <svg width="29px" height="28px" viewBox="0 0 20 20" focusable="false" aria-hidden="true"> 
+                                        <use xlink:href="./img/symbol-sprite.svg#likestroked"></use> 
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="tooltip tooltip-center" data-text="Like and comment"></div>
+                            <div class="grid__item__save__block tooltip-btn tooltip-center p-r d-f j-c-c a-i-c">
+                                <button class="grid__item__save-btn tooltip-btn" aria-label="Save to collection">
+                                    <svg width="23px" height="28px" viewBox="0 0 24 29" focusable="false" aria-hidden="true"> 
+                                        <use xlink:href="./img/symbol-sprite.svg#Collection"></use> 
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="tooltip tooltip-block-start" data-text="Save to collection"></div>
+                        </div>
+                        <button class="p-r hover-hidden grid__item__edit-btn p-a">
+                            Remix
+                            <span aria-hidden="true" class="p-a grid__item__edit-btn__icon"></span>
+                        </button>
+                    </div>
+                </li>
+                <li class="grid__item xs-w-50 sm-w-33 lg-w-25">
+                    <div class="grid__item__inner p-r" itemscope itemtype="http://schema.org/Article">
+                        <div hidden itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+                            <meta itemprop="name" content="PicsArt">
+                            <div itemprop="logo" itemscope="" itemtype="https://schema.org/ImageObject">
+                                <meta itemprop="url" content="https://picsart.com/images/picsart.png">
+                            </div>
+                        </div>
+                        <meta itemprop="author" content="living4picklez">
+                        <meta itemprop="url" content="https://picsart.com/i/image-331179751080201">
+                        <meta itemprop="datePublished" content="2020-06-30T02:22:31.892Z">
+                        <meta itemprop="headline" content="#freetoedit simpsons backround">
+                        <a class="grid__item__top-link w-100 f-z-1x touch-hidden" itemprop="author" content="living4picklez" href="#"> Text </a>
+                        <!-- Title attribute isn't accessible, so aria-label is a helper here for describing link -->
+                        <a class="p-r d-b grid__item__link" href="#" title="Descriptive text here" aria-label="Descriptive text here">  
+                            <div class="grid__item__pic-wrap p-r" itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
+                                <picture class="d-b grid__item__picture p-a">
+                                    <source srcset="./img/cover.webp" type="image/webp">
+                                    <img class="grid__item__img p-a" src="./img/cover-1x.jpg" srcset="./img/cover-1x.jpg 1x, ./img/cover-2x.jpg 2x" alt="complex complexedit complexbackground complexeditbackground background freetoedit">
+                                </picture>
+                                <meta itemprop="contentUrl" content="https://cdn141.picsart.com/331179751080201.jpg?type=webp&amp;to=min&amp;r=480">
+                                <meta itemprop="datePublished" content="2020-06-30T02:22:31.892Z">
+                                <meta itemprop="author" content="living4picklez">
+                                <meta itemprop="url" content="https://picsart.com/i/image-331179751080201">
+                                <meta itemprop="embedUrl" content="https://picsart.com/e/331179751080201">
+                                <meta itemprop="width" content="1948">
+                                <meta itemprop="height" content="3463">
+                                <meta itemprop="name" content="#freetoedit simpsons backround">
+                                <meta itemprop="representativeOfPage" content="True">
+                            </div>
+                        </a>
+                        <div class="grid__item__bottom-content p-a d-f j-c-s-b w-100 touch-hidden">
+                            <div class="grid__item__share__block d-f j-c-c a-i-c">
+                                <svg width="31px" height="28px" viewBox="0 0 31 28" focusable="false" aria-hidden="true"> 
+                                    <use xlink:href="./img/symbol-sprite.svg#ShareGrid"></use>
+                                </svg>
+                            </div>
+                            <div class="grid__item__share__menu-wrap touch-hidden w-100 p-a d-f a-i-c j-c-s-b">
+                                <ul class="grid__item__social__share d-f a-i-c">
+                                    <li class="grid__item__social__share__item fb"></li>
+                                    <li class="grid__item__social__share__item mail"></li>
+                                    <li class="grid__item__social__share__item pinterest"></li>
+                                    <li class="grid__item__social__share__item reddit"></li>
+                                    <li class="grid__item__social__share__item twitter"></li>
+                                </ul>
+                                <a href="#" class="grid__item__preview-link" aria-label="Descriptive text here">
+                                    <svg width="19px" height="19px" viewBox="0 0 19 19"> 
+                                        <use xlink:href="./img/symbol-sprite.svg#plus"></use> 
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="grid__item__wishlist__block tooltip-btn tooltip-center p-r d-f j-c-c a-i-c">
+                                <button class="grid__item__wishlist-btn" aria-label="Add to wishlist">
+                                    <svg width="29px" height="28px" viewBox="0 0 20 20" focusable="false" aria-hidden="true"> 
+                                        <use xlink:href="./img/symbol-sprite.svg#likestroked"></use> 
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="tooltip tooltip-center" data-text="Like and comment"></div>
+                            <div class="grid__item__save__block tooltip-btn tooltip-center p-r d-f j-c-c a-i-c">
+                                <button class="grid__item__save-btn tooltip-btn" aria-label="Save to collection">
+                                    <svg width="23px" height="28px" viewBox="0 0 24 29" focusable="false" aria-hidden="true"> 
+                                        <use xlink:href="./img/symbol-sprite.svg#Collection"></use> 
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="tooltip tooltip-block-start" data-text="Save to collection"></div>
+                        </div>
+                        <button class="p-r hover-hidden grid__item__edit-btn p-a">
+                            Remix
+                            <span aria-hidden="true" class="p-a grid__item__edit-btn__icon"></span>
+                        </button>
+                    </div>
+                </li>
+                <li class="grid__item xs-w-50 sm-w-33 lg-w-25">
+                    <div class="grid__item__inner p-r" itemscope itemtype="http://schema.org/Article">
+                        <div hidden itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+                            <meta itemprop="name" content="PicsArt">
+                            <div itemprop="logo" itemscope="" itemtype="https://schema.org/ImageObject">
+                                <meta itemprop="url" content="https://picsart.com/images/picsart.png">
+                            </div>
+                        </div>
+                        <meta itemprop="author" content="living4picklez">
+                        <meta itemprop="url" content="https://picsart.com/i/image-331179751080201">
+                        <meta itemprop="datePublished" content="2020-06-30T02:22:31.892Z">
+                        <meta itemprop="headline" content="#freetoedit simpsons backround">
+                        <a class="grid__item__top-link w-100 f-z-1x touch-hidden" itemprop="author" content="living4picklez" href="#"> Text </a>
+                        <!-- Title attribute isn't accessible, so aria-label is a helper here for describing link -->
+                        <a class="p-r d-b grid__item__link" href="#" title="Descriptive text here" aria-label="Descriptive text here">  
+                            <div class="grid__item__pic-wrap p-r" itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
+                                <picture class="d-b grid__item__picture p-a">
+                                    <source srcset="./img/cover.webp" type="image/webp">
+                                    <img class="grid__item__img p-a" src="./img/cover-1x.jpg" srcset="./img/cover-1x.jpg 1x, ./img/cover-2x.jpg 2x" alt="complex complexedit complexbackground complexeditbackground background freetoedit">
+                                </picture>
+                                <meta itemprop="contentUrl" content="https://cdn141.picsart.com/331179751080201.jpg?type=webp&amp;to=min&amp;r=480">
+                                <meta itemprop="datePublished" content="2020-06-30T02:22:31.892Z">
+                                <meta itemprop="author" content="living4picklez">
+                                <meta itemprop="url" content="https://picsart.com/i/image-331179751080201">
+                                <meta itemprop="embedUrl" content="https://picsart.com/e/331179751080201">
+                                <meta itemprop="width" content="1948">
+                                <meta itemprop="height" content="3463">
+                                <meta itemprop="name" content="#freetoedit simpsons backround">
+                                <meta itemprop="representativeOfPage" content="True">
+                            </div>
+                        </a>
+                        <div class="grid__item__bottom-content p-a d-f j-c-s-b w-100 touch-hidden">
+                            <div class="grid__item__share__block d-f j-c-c a-i-c">
+                                <svg width="31px" height="28px" viewBox="0 0 31 28" focusable="false" aria-hidden="true"> 
+                                    <use xlink:href="./img/symbol-sprite.svg#ShareGrid"></use>
+                                </svg>
+                            </div>
+                            <div class="grid__item__share__menu-wrap touch-hidden w-100 p-a d-f a-i-c j-c-s-b">
+                                <ul class="grid__item__social__share d-f a-i-c">
+                                    <li class="grid__item__social__share__item fb"></li>
+                                    <li class="grid__item__social__share__item mail"></li>
+                                    <li class="grid__item__social__share__item pinterest"></li>
+                                    <li class="grid__item__social__share__item reddit"></li>
+                                    <li class="grid__item__social__share__item twitter"></li>
+                                </ul>
+                                <a href="#" class="grid__item__preview-link" aria-label="Descriptive text here">
+                                    <svg width="19px" height="19px" viewBox="0 0 19 19"> 
+                                        <use xlink:href="./img/symbol-sprite.svg#plus"></use> 
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="grid__item__wishlist__block tooltip-btn tooltip-center p-r d-f j-c-c a-i-c">
+                                <button class="grid__item__wishlist-btn" aria-label="Add to wishlist">
+                                    <svg width="29px" height="28px" viewBox="0 0 20 20" focusable="false" aria-hidden="true"> 
+                                        <use xlink:href="./img/symbol-sprite.svg#likestroked"></use> 
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="tooltip tooltip-center" data-text="Like and comment"></div>
+                            <div class="grid__item__save__block tooltip-btn tooltip-center p-r d-f j-c-c a-i-c">
+                                <button class="grid__item__save-btn tooltip-btn" aria-label="Save to collection">
+                                    <svg width="23px" height="28px" viewBox="0 0 24 29" focusable="false" aria-hidden="true"> 
+                                        <use xlink:href="./img/symbol-sprite.svg#Collection"></use> 
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="tooltip tooltip-block-start" data-text="Save to collection"></div>
+                        </div>
+                        <button class="p-r hover-hidden grid__item__edit-btn p-a">
+                            Remix
+                            <span aria-hidden="true" class="p-a grid__item__edit-btn__icon"></span>
+                        </button>
+                    </div>
+                </li>
+                <li class="grid__item xs-w-50 sm-w-33 lg-w-25">
+                    <div class="grid__item__inner p-r" itemscope itemtype="http://schema.org/Article">
+                        <div hidden itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+                            <meta itemprop="name" content="PicsArt">
+                            <div itemprop="logo" itemscope="" itemtype="https://schema.org/ImageObject">
+                                <meta itemprop="url" content="https://picsart.com/images/picsart.png">
+                            </div>
+                        </div>
+                        <meta itemprop="author" content="living4picklez">
+                        <meta itemprop="url" content="https://picsart.com/i/image-331179751080201">
+                        <meta itemprop="datePublished" content="2020-06-30T02:22:31.892Z">
+                        <meta itemprop="headline" content="#freetoedit simpsons backround">
+                        <a class="grid__item__top-link w-100 f-z-1x touch-hidden" itemprop="author" content="living4picklez" href="#"> Text </a>
+                        <!-- Title attribute isn't accessible, so aria-label is a helper here for describing link -->
+                        <a class="p-r d-b grid__item__link" href="#" title="Descriptive text here" aria-label="Descriptive text here">  
+                            <div class="grid__item__pic-wrap p-r" itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
+                                <picture class="d-b grid__item__picture p-a">
+                                    <source srcset="./img/cover.webp" type="image/webp">
+                                    <img class="grid__item__img p-a" src="./img/cover-1x.jpg" srcset="./img/cover-1x.jpg 1x, ./img/cover-2x.jpg 2x" alt="complex complexedit complexbackground complexeditbackground background freetoedit">
+                                </picture>
+                                <meta itemprop="contentUrl" content="https://cdn141.picsart.com/331179751080201.jpg?type=webp&amp;to=min&amp;r=480">
+                                <meta itemprop="datePublished" content="2020-06-30T02:22:31.892Z">
+                                <meta itemprop="author" content="living4picklez">
+                                <meta itemprop="url" content="https://picsart.com/i/image-331179751080201">
+                                <meta itemprop="embedUrl" content="https://picsart.com/e/331179751080201">
+                                <meta itemprop="width" content="1948">
+                                <meta itemprop="height" content="3463">
+                                <meta itemprop="name" content="#freetoedit simpsons backround">
+                                <meta itemprop="representativeOfPage" content="True">
+                            </div>
+                        </a>
+                        <div class="grid__item__bottom-content p-a d-f j-c-s-b w-100 touch-hidden">
+                            <div class="grid__item__share__block d-f j-c-c a-i-c">
+                                <svg width="31px" height="28px" viewBox="0 0 31 28" focusable="false" aria-hidden="true"> 
+                                    <use xlink:href="./img/symbol-sprite.svg#ShareGrid"></use>
+                                </svg>
+                            </div>
+                            <div class="grid__item__share__menu-wrap touch-hidden w-100 p-a d-f a-i-c j-c-s-b">
+                                <ul class="grid__item__social__share d-f a-i-c">
+                                    <li class="grid__item__social__share__item fb"></li>
+                                    <li class="grid__item__social__share__item mail"></li>
+                                    <li class="grid__item__social__share__item pinterest"></li>
+                                    <li class="grid__item__social__share__item reddit"></li>
+                                    <li class="grid__item__social__share__item twitter"></li>
+                                </ul>
+                                <a href="#" class="grid__item__preview-link" aria-label="Descriptive text here">
+                                    <svg width="19px" height="19px" viewBox="0 0 19 19"> 
+                                        <use xlink:href="./img/symbol-sprite.svg#plus"></use> 
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="grid__item__wishlist__block tooltip-btn tooltip-center p-r d-f j-c-c a-i-c">
+                                <button class="grid__item__wishlist-btn" aria-label="Add to wishlist">
+                                    <svg width="29px" height="28px" viewBox="0 0 20 20" focusable="false" aria-hidden="true"> 
+                                        <use xlink:href="./img/symbol-sprite.svg#likestroked"></use> 
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="tooltip tooltip-center" data-text="Like and comment"></div>
+                            <div class="grid__item__save__block tooltip-btn tooltip-center p-r d-f j-c-c a-i-c">
+                                <button class="grid__item__save-btn tooltip-btn" aria-label="Save to collection">
+                                    <svg width="23px" height="28px" viewBox="0 0 24 29" focusable="false" aria-hidden="true"> 
+                                        <use xlink:href="./img/symbol-sprite.svg#Collection"></use> 
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="tooltip tooltip-block-start" data-text="Save to collection"></div>
+                        </div>
+                        <button class="p-r hover-hidden grid__item__edit-btn p-a">
+                            Remix
+                            <span aria-hidden="true" class="p-a grid__item__edit-btn__icon"></span>
+                        </button>
+                    </div>
+                </li>
+                <li class="grid__item xs-w-50 sm-w-33 lg-w-25">
+                    <div class="grid__item__inner p-r" itemscope itemtype="http://schema.org/Article">
+                        <div hidden itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+                            <meta itemprop="name" content="PicsArt">
+                            <div itemprop="logo" itemscope="" itemtype="https://schema.org/ImageObject">
+                                <meta itemprop="url" content="https://picsart.com/images/picsart.png">
+                            </div>
+                        </div>
+                        <meta itemprop="author" content="living4picklez">
+                        <meta itemprop="url" content="https://picsart.com/i/image-331179751080201">
+                        <meta itemprop="datePublished" content="2020-06-30T02:22:31.892Z">
+                        <meta itemprop="headline" content="#freetoedit simpsons backround">
+                        <a class="grid__item__top-link w-100 f-z-1x touch-hidden" itemprop="author" content="living4picklez" href="#"> Text </a>
+                        <!-- Title attribute isn't accessible, so aria-label is a helper here for describing link -->
+                        <a class="p-r d-b grid__item__link" href="#" title="Descriptive text here" aria-label="Descriptive text here">  
+                            <div class="grid__item__pic-wrap p-r" itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
+                                <picture class="d-b grid__item__picture p-a">
+                                    <source srcset="./img/cover.webp" type="image/webp">
+                                    <img class="grid__item__img p-a" src="./img/cover-1x.jpg" srcset="./img/cover-1x.jpg 1x, ./img/cover-2x.jpg 2x" alt="complex complexedit complexbackground complexeditbackground background freetoedit">
+                                </picture>
+                                <meta itemprop="contentUrl" content="https://cdn141.picsart.com/331179751080201.jpg?type=webp&amp;to=min&amp;r=480">
+                                <meta itemprop="datePublished" content="2020-06-30T02:22:31.892Z">
+                                <meta itemprop="author" content="living4picklez">
+                                <meta itemprop="url" content="https://picsart.com/i/image-331179751080201">
+                                <meta itemprop="embedUrl" content="https://picsart.com/e/331179751080201">
+                                <meta itemprop="width" content="1948">
+                                <meta itemprop="height" content="3463">
+                                <meta itemprop="name" content="#freetoedit simpsons backround">
+                                <meta itemprop="representativeOfPage" content="True">
+                            </div>
+                        </a>
+                        <div class="grid__item__bottom-content p-a d-f j-c-s-b w-100 touch-hidden">
+                            <div class="grid__item__share__block d-f j-c-c a-i-c">
+                                <svg width="31px" height="28px" viewBox="0 0 31 28" focusable="false" aria-hidden="true"> 
+                                    <use xlink:href="./img/symbol-sprite.svg#ShareGrid"></use>
+                                </svg>
+                            </div>
+                            <div class="grid__item__share__menu-wrap touch-hidden w-100 p-a d-f a-i-c j-c-s-b">
+                                <ul class="grid__item__social__share d-f a-i-c">
+                                    <li class="grid__item__social__share__item fb"></li>
+                                    <li class="grid__item__social__share__item mail"></li>
+                                    <li class="grid__item__social__share__item pinterest"></li>
+                                    <li class="grid__item__social__share__item reddit"></li>
+                                    <li class="grid__item__social__share__item twitter"></li>
+                                </ul>
+                                <a href="#" class="grid__item__preview-link" aria-label="Descriptive text here">
+                                    <svg width="19px" height="19px" viewBox="0 0 19 19"> 
+                                        <use xlink:href="./img/symbol-sprite.svg#plus"></use> 
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="grid__item__wishlist__block tooltip-btn tooltip-center p-r d-f j-c-c a-i-c">
+                                <button class="grid__item__wishlist-btn" aria-label="Add to wishlist">
+                                    <svg width="29px" height="28px" viewBox="0 0 20 20" focusable="false" aria-hidden="true"> 
+                                        <use xlink:href="./img/symbol-sprite.svg#likestroked"></use> 
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="tooltip tooltip-center" data-text="Like and comment"></div>
+                            <div class="grid__item__save__block tooltip-btn tooltip-center p-r d-f j-c-c a-i-c">
+                                <button class="grid__item__save-btn tooltip-btn" aria-label="Save to collection">
+                                    <svg width="23px" height="28px" viewBox="0 0 24 29" focusable="false" aria-hidden="true"> 
+                                        <use xlink:href="./img/symbol-sprite.svg#Collection"></use> 
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="tooltip tooltip-block-start" data-text="Save to collection"></div>
+                        </div>
+                        <button class="p-r hover-hidden grid__item__edit-btn p-a">
+                            Remix
+                            <span aria-hidden="true" class="p-a grid__item__edit-btn__icon"></span>
+                        </button>
+                    </div>
+                </li>
+                <li class="grid__item xs-w-50 sm-w-33 lg-w-25">
+                    <div class="grid__item__inner p-r" itemscope itemtype="http://schema.org/Article">
+                        <div hidden itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+                            <meta itemprop="name" content="PicsArt">
+                            <div itemprop="logo" itemscope="" itemtype="https://schema.org/ImageObject">
+                                <meta itemprop="url" content="https://picsart.com/images/picsart.png">
+                            </div>
+                        </div>
+                        <meta itemprop="author" content="living4picklez">
+                        <meta itemprop="url" content="https://picsart.com/i/image-331179751080201">
+                        <meta itemprop="datePublished" content="2020-06-30T02:22:31.892Z">
+                        <meta itemprop="headline" content="#freetoedit simpsons backround">
+                        <a class="grid__item__top-link w-100 f-z-1x touch-hidden" itemprop="author" content="living4picklez" href="#"> Text </a>
+                        <!-- Title attribute isn't accessible, so aria-label is a helper here for describing link -->
+                        <a class="p-r d-b grid__item__link" href="#" title="Descriptive text here" aria-label="Descriptive text here">  
+                            <div class="grid__item__pic-wrap p-r" itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
+                                <picture class="d-b grid__item__picture p-a">
+                                    <source srcset="./img/cover.webp" type="image/webp">
+                                    <img class="grid__item__img p-a" src="./img/cover-1x.jpg" srcset="./img/cover-1x.jpg 1x, ./img/cover-2x.jpg 2x" alt="complex complexedit complexbackground complexeditbackground background freetoedit">
+                                </picture>
+                                <meta itemprop="contentUrl" content="https://cdn141.picsart.com/331179751080201.jpg?type=webp&amp;to=min&amp;r=480">
+                                <meta itemprop="datePublished" content="2020-06-30T02:22:31.892Z">
+                                <meta itemprop="author" content="living4picklez">
+                                <meta itemprop="url" content="https://picsart.com/i/image-331179751080201">
+                                <meta itemprop="embedUrl" content="https://picsart.com/e/331179751080201">
+                                <meta itemprop="width" content="1948">
+                                <meta itemprop="height" content="3463">
+                                <meta itemprop="name" content="#freetoedit simpsons backround">
+                                <meta itemprop="representativeOfPage" content="True">
+                            </div>
+                        </a>
+                        <div class="grid__item__bottom-content p-a d-f j-c-s-b w-100 touch-hidden">
+                            <div class="grid__item__share__block d-f j-c-c a-i-c">
+                                <svg width="31px" height="28px" viewBox="0 0 31 28" focusable="false" aria-hidden="true"> 
+                                    <use xlink:href="./img/symbol-sprite.svg#ShareGrid"></use>
+                                </svg>
+                            </div>
+                            <div class="grid__item__share__menu-wrap touch-hidden w-100 p-a d-f a-i-c j-c-s-b">
+                                <ul class="grid__item__social__share d-f a-i-c">
+                                    <li class="grid__item__social__share__item fb"></li>
+                                    <li class="grid__item__social__share__item mail"></li>
+                                    <li class="grid__item__social__share__item pinterest"></li>
+                                    <li class="grid__item__social__share__item reddit"></li>
+                                    <li class="grid__item__social__share__item twitter"></li>
+                                </ul>
+                                <a href="#" class="grid__item__preview-link" aria-label="Descriptive text here">
+                                    <svg width="19px" height="19px" viewBox="0 0 19 19"> 
+                                        <use xlink:href="./img/symbol-sprite.svg#plus"></use> 
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="grid__item__wishlist__block tooltip-btn tooltip-center p-r d-f j-c-c a-i-c">
+                                <button class="grid__item__wishlist-btn" aria-label="Add to wishlist">
+                                    <svg width="29px" height="28px" viewBox="0 0 20 20" focusable="false" aria-hidden="true"> 
+                                        <use xlink:href="./img/symbol-sprite.svg#likestroked"></use> 
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="tooltip tooltip-center" data-text="Like and comment"></div>
+                            <div class="grid__item__save__block tooltip-btn tooltip-center p-r d-f j-c-c a-i-c">
+                                <button class="grid__item__save-btn tooltip-btn" aria-label="Save to collection">
+                                    <svg width="23px" height="28px" viewBox="0 0 24 29" focusable="false" aria-hidden="true"> 
+                                        <use xlink:href="./img/symbol-sprite.svg#Collection"></use> 
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="tooltip tooltip-block-start" data-text="Save to collection"></div>
+                        </div>
+                        <button class="p-r hover-hidden grid__item__edit-btn p-a">
+                            Remix
+                            <span aria-hidden="true" class="p-a grid__item__edit-btn__icon"></span>
+                        </button>
+                    </div>
+                </li>
+                <li class="grid__item xs-w-50 sm-w-33 lg-w-25">
+                    <div class="grid__item__inner p-r" itemscope itemtype="http://schema.org/Article">
+                        <div hidden itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+                            <meta itemprop="name" content="PicsArt">
+                            <div itemprop="logo" itemscope="" itemtype="https://schema.org/ImageObject">
+                                <meta itemprop="url" content="https://picsart.com/images/picsart.png">
+                            </div>
+                        </div>
+                        <meta itemprop="author" content="living4picklez">
+                        <meta itemprop="url" content="https://picsart.com/i/image-331179751080201">
+                        <meta itemprop="datePublished" content="2020-06-30T02:22:31.892Z">
+                        <meta itemprop="headline" content="#freetoedit simpsons backround">
+                        <a class="grid__item__top-link w-100 f-z-1x touch-hidden" itemprop="author" content="living4picklez" href="#"> Text </a>
+                        <!-- Title attribute isn't accessible, so aria-label is a helper here for describing link -->
+                        <a class="p-r d-b grid__item__link" href="#" title="Descriptive text here" aria-label="Descriptive text here">  
+                            <div class="grid__item__pic-wrap p-r" itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
+                                <picture class="d-b grid__item__picture p-a">
+                                    <source srcset="./img/cover.webp" type="image/webp">
+                                    <img class="grid__item__img p-a" src="./img/cover-1x.jpg" srcset="./img/cover-1x.jpg 1x, ./img/cover-2x.jpg 2x" alt="complex complexedit complexbackground complexeditbackground background freetoedit">
+                                </picture>
+                                <meta itemprop="contentUrl" content="https://cdn141.picsart.com/331179751080201.jpg?type=webp&amp;to=min&amp;r=480">
+                                <meta itemprop="datePublished" content="2020-06-30T02:22:31.892Z">
+                                <meta itemprop="author" content="living4picklez">
+                                <meta itemprop="url" content="https://picsart.com/i/image-331179751080201">
+                                <meta itemprop="embedUrl" content="https://picsart.com/e/331179751080201">
+                                <meta itemprop="width" content="1948">
+                                <meta itemprop="height" content="3463">
+                                <meta itemprop="name" content="#freetoedit simpsons backround">
+                                <meta itemprop="representativeOfPage" content="True">
+                            </div>
+                        </a>
+                        <div class="grid__item__bottom-content p-a d-f j-c-s-b w-100 touch-hidden">
+                            <div class="grid__item__share__block d-f j-c-c a-i-c">
+                                <svg width="31px" height="28px" viewBox="0 0 31 28" focusable="false" aria-hidden="true"> 
+                                    <use xlink:href="./img/symbol-sprite.svg#ShareGrid"></use>
+                                </svg>
+                            </div>
+                            <div class="grid__item__share__menu-wrap touch-hidden w-100 p-a d-f a-i-c j-c-s-b">
+                                <ul class="grid__item__social__share d-f a-i-c">
+                                    <li class="grid__item__social__share__item fb"></li>
+                                    <li class="grid__item__social__share__item mail"></li>
+                                    <li class="grid__item__social__share__item pinterest"></li>
+                                    <li class="grid__item__social__share__item reddit"></li>
+                                    <li class="grid__item__social__share__item twitter"></li>
+                                </ul>
+                                <a href="#" class="grid__item__preview-link" aria-label="Descriptive text here">
+                                    <svg width="19px" height="19px" viewBox="0 0 19 19"> 
+                                        <use xlink:href="./img/symbol-sprite.svg#plus"></use> 
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="grid__item__wishlist__block tooltip-btn tooltip-center p-r d-f j-c-c a-i-c">
+                                <button class="grid__item__wishlist-btn" aria-label="Add to wishlist">
+                                    <svg width="29px" height="28px" viewBox="0 0 20 20" focusable="false" aria-hidden="true"> 
+                                        <use xlink:href="./img/symbol-sprite.svg#likestroked"></use> 
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="tooltip tooltip-center" data-text="Like and comment"></div>
+                            <div class="grid__item__save__block tooltip-btn tooltip-center p-r d-f j-c-c a-i-c">
+                                <button class="grid__item__save-btn tooltip-btn" aria-label="Save to collection">
+                                    <svg width="23px" height="28px" viewBox="0 0 24 29" focusable="false" aria-hidden="true"> 
+                                        <use xlink:href="./img/symbol-sprite.svg#Collection"></use> 
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="tooltip tooltip-block-start" data-text="Save to collection"></div>
+                        </div>
+                        <button class="p-r hover-hidden grid__item__edit-btn p-a">
+                            Remix
+                            <span aria-hidden="true" class="p-a grid__item__edit-btn__icon"></span>
+                        </button>
+                    </div>
+                </li>
+                <li class="grid__item xs-w-50 sm-w-33 lg-w-25">
+                    <div class="grid__item__inner p-r" itemscope itemtype="http://schema.org/Article">
+                        <div hidden itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+                            <meta itemprop="name" content="PicsArt">
+                            <div itemprop="logo" itemscope="" itemtype="https://schema.org/ImageObject">
+                                <meta itemprop="url" content="https://picsart.com/images/picsart.png">
+                            </div>
+                        </div>
+                        <meta itemprop="author" content="living4picklez">
+                        <meta itemprop="url" content="https://picsart.com/i/image-331179751080201">
+                        <meta itemprop="datePublished" content="2020-06-30T02:22:31.892Z">
+                        <meta itemprop="headline" content="#freetoedit simpsons backround">
+                        <a class="grid__item__top-link w-100 f-z-1x touch-hidden" itemprop="author" content="living4picklez" href="#"> Text </a>
+                        <!-- Title attribute isn't accessible, so aria-label is a helper here for describing link -->
+                        <a class="p-r d-b grid__item__link" href="#" title="Descriptive text here" aria-label="Descriptive text here">  
+                            <div class="grid__item__pic-wrap p-r" itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
+                                <picture class="d-b grid__item__picture p-a">
+                                    <source srcset="./img/cover.webp" type="image/webp">
+                                    <img class="grid__item__img p-a" src="./img/cover-1x.jpg" srcset="./img/cover-1x.jpg 1x, ./img/cover-2x.jpg 2x" alt="complex complexedit complexbackground complexeditbackground background freetoedit">
+                                </picture>
+                                <meta itemprop="contentUrl" content="https://cdn141.picsart.com/331179751080201.jpg?type=webp&amp;to=min&amp;r=480">
+                                <meta itemprop="datePublished" content="2020-06-30T02:22:31.892Z">
+                                <meta itemprop="author" content="living4picklez">
+                                <meta itemprop="url" content="https://picsart.com/i/image-331179751080201">
+                                <meta itemprop="embedUrl" content="https://picsart.com/e/331179751080201">
+                                <meta itemprop="width" content="1948">
+                                <meta itemprop="height" content="3463">
+                                <meta itemprop="name" content="#freetoedit simpsons backround">
+                                <meta itemprop="representativeOfPage" content="True">
+                            </div>
+                        </a>
+                        <div class="grid__item__bottom-content p-a d-f j-c-s-b w-100 touch-hidden">
+                            <div class="grid__item__share__block d-f j-c-c a-i-c">
+                                <svg width="31px" height="28px" viewBox="0 0 31 28" focusable="false" aria-hidden="true"> 
+                                    <use xlink:href="./img/symbol-sprite.svg#ShareGrid"></use>
+                                </svg>
+                            </div>
+                            <div class="grid__item__share__menu-wrap touch-hidden w-100 p-a d-f a-i-c j-c-s-b">
+                                <ul class="grid__item__social__share d-f a-i-c">
+                                    <li class="grid__item__social__share__item fb"></li>
+                                    <li class="grid__item__social__share__item mail"></li>
+                                    <li class="grid__item__social__share__item pinterest"></li>
+                                    <li class="grid__item__social__share__item reddit"></li>
+                                    <li class="grid__item__social__share__item twitter"></li>
+                                </ul>
+                                <a href="#" class="grid__item__preview-link" aria-label="Descriptive text here">
+                                    <svg width="19px" height="19px" viewBox="0 0 19 19"> 
+                                        <use xlink:href="./img/symbol-sprite.svg#plus"></use> 
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="grid__item__wishlist__block tooltip-btn tooltip-center p-r d-f j-c-c a-i-c">
+                                <button class="grid__item__wishlist-btn" aria-label="Add to wishlist">
+                                    <svg width="29px" height="28px" viewBox="0 0 20 20" focusable="false" aria-hidden="true"> 
+                                        <use xlink:href="./img/symbol-sprite.svg#likestroked"></use> 
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="tooltip tooltip-center" data-text="Like and comment"></div>
+                            <div class="grid__item__save__block tooltip-btn tooltip-center p-r d-f j-c-c a-i-c">
+                                <button class="grid__item__save-btn tooltip-btn" aria-label="Save to collection">
+                                    <svg width="23px" height="28px" viewBox="0 0 24 29" focusable="false" aria-hidden="true"> 
+                                        <use xlink:href="./img/symbol-sprite.svg#Collection"></use> 
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="tooltip tooltip-block-start" data-text="Save to collection"></div>
+                        </div>
+                        <button class="p-r hover-hidden grid__item__edit-btn p-a">
+                            Remix
+                            <span aria-hidden="true" class="p-a grid__item__edit-btn__icon"></span>
+                        </button>
+                    </div>
+                </li>
+                <li class="grid__item xs-w-50 sm-w-33 lg-w-25">
+                    <div class="grid__item__inner p-r" itemscope itemtype="http://schema.org/Article">
+                        <div hidden itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+                            <meta itemprop="name" content="PicsArt">
+                            <div itemprop="logo" itemscope="" itemtype="https://schema.org/ImageObject">
+                                <meta itemprop="url" content="https://picsart.com/images/picsart.png">
+                            </div>
+                        </div>
+                        <meta itemprop="author" content="living4picklez">
+                        <meta itemprop="url" content="https://picsart.com/i/image-331179751080201">
+                        <meta itemprop="datePublished" content="2020-06-30T02:22:31.892Z">
+                        <meta itemprop="headline" content="#freetoedit simpsons backround">
+                        <a class="grid__item__top-link w-100 f-z-1x touch-hidden" itemprop="author" content="living4picklez" href="#"> Text </a>
+                        <!-- Title attribute isn't accessible, so aria-label is a helper here for describing link -->
+                        <a class="p-r d-b grid__item__link" href="#" title="Descriptive text here" aria-label="Descriptive text here">  
+                            <div class="grid__item__pic-wrap p-r" itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
+                                <picture class="d-b grid__item__picture p-a">
+                                    <source srcset="./img/cover.webp" type="image/webp">
+                                    <img class="grid__item__img p-a" src="./img/cover-1x.jpg" srcset="./img/cover-1x.jpg 1x, ./img/cover-2x.jpg 2x" alt="complex complexedit complexbackground complexeditbackground background freetoedit">
+                                </picture>
+                                <meta itemprop="contentUrl" content="https://cdn141.picsart.com/331179751080201.jpg?type=webp&amp;to=min&amp;r=480">
+                                <meta itemprop="datePublished" content="2020-06-30T02:22:31.892Z">
+                                <meta itemprop="author" content="living4picklez">
+                                <meta itemprop="url" content="https://picsart.com/i/image-331179751080201">
+                                <meta itemprop="embedUrl" content="https://picsart.com/e/331179751080201">
+                                <meta itemprop="width" content="1948">
+                                <meta itemprop="height" content="3463">
+                                <meta itemprop="name" content="#freetoedit simpsons backround">
+                                <meta itemprop="representativeOfPage" content="True">
+                            </div>
+                        </a>
+                        <div class="grid__item__bottom-content p-a d-f j-c-s-b w-100 touch-hidden">
+                            <div class="grid__item__share__block d-f j-c-c a-i-c">
+                                <svg width="31px" height="28px" viewBox="0 0 31 28" focusable="false" aria-hidden="true"> 
+                                    <use xlink:href="./img/symbol-sprite.svg#ShareGrid"></use>
+                                </svg>
+                            </div>
+                            <div class="grid__item__share__menu-wrap touch-hidden w-100 p-a d-f a-i-c j-c-s-b">
+                                <ul class="grid__item__social__share d-f a-i-c">
+                                    <li class="grid__item__social__share__item fb"></li>
+                                    <li class="grid__item__social__share__item mail"></li>
+                                    <li class="grid__item__social__share__item pinterest"></li>
+                                    <li class="grid__item__social__share__item reddit"></li>
+                                    <li class="grid__item__social__share__item twitter"></li>
+                                </ul>
+                                <a href="#" class="grid__item__preview-link" aria-label="Descriptive text here">
+                                    <svg width="19px" height="19px" viewBox="0 0 19 19"> 
+                                        <use xlink:href="./img/symbol-sprite.svg#plus"></use> 
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="grid__item__wishlist__block tooltip-btn tooltip-center p-r d-f j-c-c a-i-c">
+                                <button class="grid__item__wishlist-btn" aria-label="Add to wishlist">
+                                    <svg width="29px" height="28px" viewBox="0 0 20 20" focusable="false" aria-hidden="true"> 
+                                        <use xlink:href="./img/symbol-sprite.svg#likestroked"></use> 
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="tooltip tooltip-center" data-text="Like and comment"></div>
+                            <div class="grid__item__save__block tooltip-btn tooltip-center p-r d-f j-c-c a-i-c">
+                                <button class="grid__item__save-btn tooltip-btn" aria-label="Save to collection">
+                                    <svg width="23px" height="28px" viewBox="0 0 24 29" focusable="false" aria-hidden="true"> 
+                                        <use xlink:href="./img/symbol-sprite.svg#Collection"></use> 
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="tooltip tooltip-block-start" data-text="Save to collection"></div>
+                        </div>
+                        <button class="p-r hover-hidden grid__item__edit-btn p-a">
+                            Remix
+                            <span aria-hidden="true" class="p-a grid__item__edit-btn__icon"></span>
+                        </button>
+                    </div>
+                </li>
+                <li class="grid__item xs-w-50 sm-w-33 lg-w-25">
+                    <div class="grid__item__inner p-r" itemscope itemtype="http://schema.org/Article">
+                        <div hidden itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+                            <meta itemprop="name" content="PicsArt">
+                            <div itemprop="logo" itemscope="" itemtype="https://schema.org/ImageObject">
+                                <meta itemprop="url" content="https://picsart.com/images/picsart.png">
+                            </div>
+                        </div>
+                        <meta itemprop="author" content="living4picklez">
+                        <meta itemprop="url" content="https://picsart.com/i/image-331179751080201">
+                        <meta itemprop="datePublished" content="2020-06-30T02:22:31.892Z">
+                        <meta itemprop="headline" content="#freetoedit simpsons backround">
+                        <a class="grid__item__top-link w-100 f-z-1x touch-hidden" itemprop="author" content="living4picklez" href="#"> Text </a>
+                        <!-- Title attribute isn't accessible, so aria-label is a helper here for describing link -->
+                        <a class="p-r d-b grid__item__link" href="#" title="Descriptive text here" aria-label="Descriptive text here">  
+                            <div class="grid__item__pic-wrap p-r" itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
+                                <picture class="d-b grid__item__picture p-a">
+                                    <source srcset="./img/cover.webp" type="image/webp">
+                                    <img class="grid__item__img p-a" src="./img/cover-1x.jpg" srcset="./img/cover-1x.jpg 1x, ./img/cover-2x.jpg 2x" alt="complex complexedit complexbackground complexeditbackground background freetoedit">
+                                </picture>
+                                <meta itemprop="contentUrl" content="https://cdn141.picsart.com/331179751080201.jpg?type=webp&amp;to=min&amp;r=480">
+                                <meta itemprop="datePublished" content="2020-06-30T02:22:31.892Z">
+                                <meta itemprop="author" content="living4picklez">
+                                <meta itemprop="url" content="https://picsart.com/i/image-331179751080201">
+                                <meta itemprop="embedUrl" content="https://picsart.com/e/331179751080201">
+                                <meta itemprop="width" content="1948">
+                                <meta itemprop="height" content="3463">
+                                <meta itemprop="name" content="#freetoedit simpsons backround">
+                                <meta itemprop="representativeOfPage" content="True">
+                            </div>
+                        </a>
+                        <div class="grid__item__bottom-content p-a d-f j-c-s-b w-100 touch-hidden">
+                            <div class="grid__item__share__block d-f j-c-c a-i-c">
+                                <svg width="31px" height="28px" viewBox="0 0 31 28" focusable="false" aria-hidden="true"> 
+                                    <use xlink:href="./img/symbol-sprite.svg#ShareGrid"></use>
+                                </svg>
+                            </div>
+                            <div class="grid__item__share__menu-wrap touch-hidden w-100 p-a d-f a-i-c j-c-s-b">
+                                <ul class="grid__item__social__share d-f a-i-c">
+                                    <li class="grid__item__social__share__item fb"></li>
+                                    <li class="grid__item__social__share__item mail"></li>
+                                    <li class="grid__item__social__share__item pinterest"></li>
+                                    <li class="grid__item__social__share__item reddit"></li>
+                                    <li class="grid__item__social__share__item twitter"></li>
+                                </ul>
+                                <a href="#" class="grid__item__preview-link" aria-label="Descriptive text here">
+                                    <svg width="19px" height="19px" viewBox="0 0 19 19"> 
+                                        <use xlink:href="./img/symbol-sprite.svg#plus"></use> 
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="grid__item__wishlist__block tooltip-btn tooltip-center p-r d-f j-c-c a-i-c">
+                                <button class="grid__item__wishlist-btn" aria-label="Add to wishlist">
+                                    <svg width="29px" height="28px" viewBox="0 0 20 20" focusable="false" aria-hidden="true"> 
+                                        <use xlink:href="./img/symbol-sprite.svg#likestroked"></use> 
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="tooltip tooltip-center" data-text="Like and comment"></div>
+                            <div class="grid__item__save__block tooltip-btn tooltip-center p-r d-f j-c-c a-i-c">
+                                <button class="grid__item__save-btn tooltip-btn" aria-label="Save to collection">
+                                    <svg width="23px" height="28px" viewBox="0 0 24 29" focusable="false" aria-hidden="true"> 
+                                        <use xlink:href="./img/symbol-sprite.svg#Collection"></use> 
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="tooltip tooltip-block-start" data-text="Save to collection"></div>
+                        </div>
+                        <button class="p-r hover-hidden grid__item__edit-btn p-a">
+                            Remix
+                            <span aria-hidden="true" class="p-a grid__item__edit-btn__icon"></span>
+                        </button>
+                    </div>
+                </li>
+                <li class="grid__item xs-w-50 sm-w-33 lg-w-25">
+                    <div class="grid__item__inner p-r" itemscope itemtype="http://schema.org/Article">
+                        <div hidden itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+                            <meta itemprop="name" content="PicsArt">
+                            <div itemprop="logo" itemscope="" itemtype="https://schema.org/ImageObject">
+                                <meta itemprop="url" content="https://picsart.com/images/picsart.png">
+                            </div>
+                        </div>
+                        <meta itemprop="author" content="living4picklez">
+                        <meta itemprop="url" content="https://picsart.com/i/image-331179751080201">
+                        <meta itemprop="datePublished" content="2020-06-30T02:22:31.892Z">
+                        <meta itemprop="headline" content="#freetoedit simpsons backround">
+                        <a class="grid__item__top-link w-100 f-z-1x touch-hidden" itemprop="author" content="living4picklez" href="#"> Text </a>
+                        <!-- Title attribute isn't accessible, so aria-label is a helper here for describing link -->
+                        <a class="p-r d-b grid__item__link" href="#" title="Descriptive text here" aria-label="Descriptive text here">  
+                            <div class="grid__item__pic-wrap p-r" itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
+                                <picture class="d-b grid__item__picture p-a">
+                                    <source srcset="./img/cover.webp" type="image/webp">
+                                    <img class="grid__item__img p-a" src="./img/cover-1x.jpg" srcset="./img/cover-1x.jpg 1x, ./img/cover-2x.jpg 2x" alt="complex complexedit complexbackground complexeditbackground background freetoedit">
+                                </picture>
+                                <meta itemprop="contentUrl" content="https://cdn141.picsart.com/331179751080201.jpg?type=webp&amp;to=min&amp;r=480">
+                                <meta itemprop="datePublished" content="2020-06-30T02:22:31.892Z">
+                                <meta itemprop="author" content="living4picklez">
+                                <meta itemprop="url" content="https://picsart.com/i/image-331179751080201">
+                                <meta itemprop="embedUrl" content="https://picsart.com/e/331179751080201">
+                                <meta itemprop="width" content="1948">
+                                <meta itemprop="height" content="3463">
+                                <meta itemprop="name" content="#freetoedit simpsons backround">
+                                <meta itemprop="representativeOfPage" content="True">
+                            </div>
+                        </a>
+                        <div class="grid__item__bottom-content p-a d-f j-c-s-b w-100 touch-hidden">
+                            <div class="grid__item__share__block d-f j-c-c a-i-c">
+                                <svg width="31px" height="28px" viewBox="0 0 31 28" focusable="false" aria-hidden="true"> 
+                                    <use xlink:href="./img/symbol-sprite.svg#ShareGrid"></use>
+                                </svg>
+                            </div>
+                            <div class="grid__item__share__menu-wrap touch-hidden w-100 p-a d-f a-i-c j-c-s-b">
+                                <ul class="grid__item__social__share d-f a-i-c">
+                                    <li class="grid__item__social__share__item fb"></li>
+                                    <li class="grid__item__social__share__item mail"></li>
+                                    <li class="grid__item__social__share__item pinterest"></li>
+                                    <li class="grid__item__social__share__item reddit"></li>
+                                    <li class="grid__item__social__share__item twitter"></li>
+                                </ul>
+                                <a href="#" class="grid__item__preview-link" aria-label="Descriptive text here">
+                                    <svg width="19px" height="19px" viewBox="0 0 19 19"> 
+                                        <use xlink:href="./img/symbol-sprite.svg#plus"></use> 
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="grid__item__wishlist__block tooltip-btn tooltip-center p-r d-f j-c-c a-i-c">
+                                <button class="grid__item__wishlist-btn" aria-label="Add to wishlist">
+                                    <svg width="29px" height="28px" viewBox="0 0 20 20" focusable="false" aria-hidden="true"> 
+                                        <use xlink:href="./img/symbol-sprite.svg#likestroked"></use> 
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="tooltip tooltip-center" data-text="Like and comment"></div>
+                            <div class="grid__item__save__block tooltip-btn tooltip-center p-r d-f j-c-c a-i-c">
+                                <button class="grid__item__save-btn tooltip-btn" aria-label="Save to collection">
+                                    <svg width="23px" height="28px" viewBox="0 0 24 29" focusable="false" aria-hidden="true"> 
+                                        <use xlink:href="./img/symbol-sprite.svg#Collection"></use> 
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="tooltip tooltip-block-start" data-text="Save to collection"></div>
+                        </div>
+                        <button class="p-r hover-hidden grid__item__edit-btn p-a">
+                            Remix
+                            <span aria-hidden="true" class="p-a grid__item__edit-btn__icon"></span>
+                        </button>
+                    </div>
+                </li>
+                <li class="grid__item xs-w-50 sm-w-33 lg-w-25">
+                    <div class="grid__item__inner p-r" itemscope itemtype="http://schema.org/Article">
+                        <div hidden itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+                            <meta itemprop="name" content="PicsArt">
+                            <div itemprop="logo" itemscope="" itemtype="https://schema.org/ImageObject">
+                                <meta itemprop="url" content="https://picsart.com/images/picsart.png">
+                            </div>
+                        </div>
+                        <meta itemprop="author" content="living4picklez">
+                        <meta itemprop="url" content="https://picsart.com/i/image-331179751080201">
+                        <meta itemprop="datePublished" content="2020-06-30T02:22:31.892Z">
+                        <meta itemprop="headline" content="#freetoedit simpsons backround">
+                        <a class="grid__item__top-link w-100 f-z-1x touch-hidden" itemprop="author" content="living4picklez" href="#"> Text </a>
+                        <!-- Title attribute isn't accessible, so aria-label is a helper here for describing link -->
+                        <a class="p-r d-b grid__item__link" href="#" title="Descriptive text here" aria-label="Descriptive text here">  
+                            <div class="grid__item__pic-wrap p-r" itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
+                                <picture class="d-b grid__item__picture p-a">
+                                    <source srcset="./img/cover.webp" type="image/webp">
+                                    <img class="grid__item__img p-a" src="./img/cover-1x.jpg" srcset="./img/cover-1x.jpg 1x, ./img/cover-2x.jpg 2x" alt="complex complexedit complexbackground complexeditbackground background freetoedit">
+                                </picture>
+                                <meta itemprop="contentUrl" content="https://cdn141.picsart.com/331179751080201.jpg?type=webp&amp;to=min&amp;r=480">
+                                <meta itemprop="datePublished" content="2020-06-30T02:22:31.892Z">
+                                <meta itemprop="author" content="living4picklez">
+                                <meta itemprop="url" content="https://picsart.com/i/image-331179751080201">
+                                <meta itemprop="embedUrl" content="https://picsart.com/e/331179751080201">
+                                <meta itemprop="width" content="1948">
+                                <meta itemprop="height" content="3463">
+                                <meta itemprop="name" content="#freetoedit simpsons backround">
+                                <meta itemprop="representativeOfPage" content="True">
+                            </div>
+                        </a>
+                        <div class="grid__item__bottom-content p-a d-f j-c-s-b w-100 touch-hidden">
+                            <div class="grid__item__share__block d-f j-c-c a-i-c">
+                                <svg width="31px" height="28px" viewBox="0 0 31 28" focusable="false" aria-hidden="true"> 
+                                    <use xlink:href="./img/symbol-sprite.svg#ShareGrid"></use>
+                                </svg>
+                            </div>
+                            <div class="grid__item__share__menu-wrap touch-hidden w-100 p-a d-f a-i-c j-c-s-b">
+                                <ul class="grid__item__social__share d-f a-i-c">
+                                    <li class="grid__item__social__share__item fb"></li>
+                                    <li class="grid__item__social__share__item mail"></li>
+                                    <li class="grid__item__social__share__item pinterest"></li>
+                                    <li class="grid__item__social__share__item reddit"></li>
+                                    <li class="grid__item__social__share__item twitter"></li>
+                                </ul>
+                                <a href="#" class="grid__item__preview-link" aria-label="Descriptive text here">
+                                    <svg width="19px" height="19px" viewBox="0 0 19 19"> 
+                                        <use xlink:href="./img/symbol-sprite.svg#plus"></use> 
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="grid__item__wishlist__block tooltip-btn tooltip-center p-r d-f j-c-c a-i-c">
+                                <button class="grid__item__wishlist-btn" aria-label="Add to wishlist">
+                                    <svg width="29px" height="28px" viewBox="0 0 20 20" focusable="false" aria-hidden="true"> 
+                                        <use xlink:href="./img/symbol-sprite.svg#likestroked"></use> 
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="tooltip tooltip-center" data-text="Like and comment"></div>
+                            <div class="grid__item__save__block tooltip-btn tooltip-center p-r d-f j-c-c a-i-c">
+                                <button class="grid__item__save-btn tooltip-btn" aria-label="Save to collection">
+                                    <svg width="23px" height="28px" viewBox="0 0 24 29" focusable="false" aria-hidden="true"> 
+                                        <use xlink:href="./img/symbol-sprite.svg#Collection"></use> 
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="tooltip tooltip-block-start" data-text="Save to collection"></div>
+                        </div>
+                        <button class="p-r hover-hidden grid__item__edit-btn p-a">
+                            Remix
+                            <span aria-hidden="true" class="p-a grid__item__edit-btn__icon"></span>
+                        </button>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </div>
+</body>
+</html>

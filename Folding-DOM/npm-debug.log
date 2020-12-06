@@ -1,0 +1,29 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/Users/Tigran/.nvm/versions/node/v8.11.4/bin/node',
+1 verbose cli   '/Users/Tigran/.nvm/versions/node/v8.11.4/bin/npm',
+1 verbose cli   'config',
+1 verbose cli   '--loglevel=warn',
+1 verbose cli   'get',
+1 verbose cli   'prefix' ]
+2 info using npm@3.10.10
+3 info using node@v8.11.4
+4 verbose stack Error: Failed to replace env in config: ${NPM_TOKEN}
+4 verbose stack     at /Users/Tigran/.nvm/versions/node/v8.11.4/lib/node_modules/npm/lib/config/core.js:418:13
+4 verbose stack     at String.replace (<anonymous>)
+4 verbose stack     at envReplace (/Users/Tigran/.nvm/versions/node/v8.11.4/lib/node_modules/npm/lib/config/core.js:414:12)
+4 verbose stack     at parseField (/Users/Tigran/.nvm/versions/node/v8.11.4/lib/node_modules/npm/lib/config/core.js:392:7)
+4 verbose stack     at /Users/Tigran/.nvm/versions/node/v8.11.4/lib/node_modules/npm/lib/config/core.js:335:17
+4 verbose stack     at Array.forEach (<anonymous>)
+4 verbose stack     at Conf.add (/Users/Tigran/.nvm/versions/node/v8.11.4/lib/node_modules/npm/lib/config/core.js:334:23)
+4 verbose stack     at ConfigChain.addString (/Users/Tigran/.nvm/versions/node/v8.11.4/lib/node_modules/npm/node_modules/config-chain/index.js:244:8)
+4 verbose stack     at Conf.<anonymous> (/Users/Tigran/.nvm/versions/node/v8.11.4/lib/node_modules/npm/lib/config/core.js:322:10)
+4 verbose stack     at /Users/Tigran/.nvm/versions/node/v8.11.4/lib/node_modules/npm/node_modules/graceful-fs/graceful-fs.js:78:16
+5 verbose cwd /Users/Tigran/Desktop/FoldingDOM-master
+6 error Darwin 19.2.0
+7 error argv "/Users/Tigran/.nvm/versions/node/v8.11.4/bin/node" "/Users/Tigran/.nvm/versions/node/v8.11.4/bin/npm" "config" "--loglevel=warn" "get" "prefix"
+8 error node v8.11.4
+9 error npm  v3.10.10
+10 error Failed to replace env in config: ${NPM_TOKEN}
+11 error If you need help, you may report this error at:
+11 error     <https://github.com/npm/npm/issues>
+12 verbose exit [ 1, true ]

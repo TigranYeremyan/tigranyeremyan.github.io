@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html, body, a, button {
+            cursor: none !important;
+        }
+        body {
+            background: black;
+            overflow-x: hidden;
+        }
+        .distort {
+            --skewedValue: 0deg;
+            width: 70%;
+            margin: 100px auto;
+            transform: skewY(var(--skewedValue));
+            transition: transform .25s;
+            will-change: var(--skewedValue);
+        }
+        img {
+            display: block;
+            max-width: 100%;
+            margin: 50px auto;
+        }
+        .cursor, .follow {
+            position: fixed;
+            pointer-events: none;
+            width: 0.6em;
+            height: 0.6em;
+            transform: translate(-50%, -50%);
+        }
+        .cursor {
+            background: #fff;
+            border-radius: 50%;
+        }
+        .follow {
+            padding: 2rem;
+            border: 0.1rem solid #fff;
+            transition: 0.2s ease-out;
+            border-radius: 50%;
+        }
+        .follow.on-focus {
+            transform: translate(-0.55rem, -0.55rem);
+            border: 0.1rem solid #fff;
+            border-radius: 0;
+            padding: 0.46rem;
+        }
+        .social-link {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            padding: 1rem 2rem;
+            margin: 4rem;
+            color: #fff;
+            cursor: pointer;
+            text-transform: uppercase;
+            font-weight: lighter;
+            color: grey;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="distort">
+            <img src="./img/example.png" alt="">
+            <img src="https://static.rfstat.com/renderforest/images/v2/home-new/website_1.webp" alt="">
+            <img src="https://static.rfstat.com/renderforest/images/v2/home-new/website_1.webp" alt="">
+            <img src="https://static.rfstat.com/renderforest/images/v2/home-new/website_1.webp" alt="">
+            <img src="https://static.rfstat.com/renderforest/images/v2/home-new/website_1.webp" alt="">
+            <img src="https://static.rfstat.com/renderforest/images/v2/home-new/website_1.webp" alt="">
+            <a href="" class='social-link'>Twitter</a>
+            <a href="" class='social-link'>Github</a>
+            <a href="" class='social-link'>Codepen</a>
+            <a href="" class='social-link'>Linkedin</a>
+        </div>
+    </div>
+    <script>
+        var requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame
+        var content = document.querySelector('.distort')
+        var currentPos = window.pageYOffset
+
+        var callDistort = function() {
+            var newPos = window.pageYOffset
+            var diff = newPos - currentPos
+            var speed = diff * 0.3
+
+            content.style.setProperty('--skewedValue', speed + "deg")
+            currentPos = newPos
+            requestAnimationFrame(callDistort)
+        }
+
+        document.addEventListener("DOMContentLoaded", callDistort)
+
+        
+        var cursor = document.createElement('div')
+        cursor.classList.add('cursor')
+        document.body.appendChild(cursor)
+
+        var follow = document.createElement('div')
+        follow.classList.add('follow')
+        document.body.appendChild(follow)
+
+        function move(obj, event) {
+            obj.style = ''
+            obj.style.top = event.clientY + 'px'
+            obj.style.left = event.clientX + 'px'
+        }
+
+        if (cursor) {
+            window.addEventListener('mousemove', function(event) {
+                var e = event
+                var t = e.target
+                var f = follow
+                var c = cursor
+                
+                requestAnimationFrame(function() {
+                    if (t.classList.contains('social-link')) {
+                        c.style.backgroundColor = 'transparent'
+                        f.style.top = t.getBoundingClientRect().top + 'px'
+                        f.style.left = t.getBoundingClientRect().left + 'px'
+                        f.style.width = t.clientWidth + 'px'
+                        f.style.height = t.clientHeight + 'px'
+
+                        f.classList.add('on-focus')
+                    } else {
+                        move(c, e)
+                        move(f, e)
+                        f.classList.remove('on-focus')
+                    }
+                })
+            })
+
+            document.addEventListener('contextmenu', function(e) {
+                e.preventDefault()
+            })
+        }
+
+
+    </script>
+</body>
+</html>

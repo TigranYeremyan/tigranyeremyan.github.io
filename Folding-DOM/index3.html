@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>3D Folded Layout | Demo 3 | Codrops</title>
+    <meta name="description" content="An experiemntal 3D layout technique for HTML elements." />
+    <meta name="keywords" content="3d, layout, html, css, bending, javascript, demo" />
+    <meta name="author" content="Codrops" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" href="https://use.typekit.net/yxd7izj.css">
+    <link rel="stylesheet" href="https://use.typekit.net/ofv7fvi.css">
+    <link rel="stylesheet" type="text/css" href="css/base.css" />
+    <link rel="stylesheet" type="text/css" href="css/split.css" />
+    <script>
+        document.documentElement.className = "js";
+        var supportsCssVars = function () {
+            var e,
+                t = document.createElement("style");
+            return (
+                (t.innerHTML = "root: { --tmp-var: bold; }"),
+                document.head.appendChild(t),
+                (e = !!(
+                    window.CSS &&
+                    window.CSS.supports &&
+                    window.CSS.supports("font-weight", "var(--tmp-var)")
+                )),
+                t.parentNode.removeChild(t),
+                e
+            );
+        };
+        supportsCssVars() ||
+            alert(
+                "Please view this demo in a modern browser that supports CSS Variables."
+            );
+    </script>
+</head>
+
+<body class="loading body">
+    <main>
+        <div class="content">
+            <button id="themeSwitcher" class="theme_switcher" aria-pressed="false"></button>
+            <!-- <div>
+                <button class="content__social-btn"><span>Twitter</span></button>
+                <button class="content__social-btn"><span>Github</span></button>
+                <button class="content__social-btn"><span>Codepen</span></button>
+                <button class="content__social-btn"><span>Linkedin</span></button>
+            </div> -->
+            <div class="fold-content" id="base-content">
+                <!-- CONTENT INSIDE HERE -->
+                <img src="img/MB-39.jpg" alt="">
+                <p class="content__type">
+                    <span class="content__type-special">Hello,<br>I'm Tigran <br>Yeremyan</span>WEB UI Engineer from
+                    Armenia
+                    experienced in
+                    all stages of advanced UI/UX development. Focused on semantics, accessibility and progressive
+                    enhancement.
+                </p>
+                <p class="content__type">
+                    But it seems that the more you try to fit in, the more you feel like an outsider, watching the
+                    “normal people” as they go about their automatic existences. For every time you say club passwords
+                    like “Have a nice day” and “Weather’s awful today, eh?”, you yearn inside to say forbidden things
+                    like “Tell me something that makes you cry” or “What do you think deja vu is for?”. Face it, you
+                    even want to talk to that girl in the elevator.
+                </p>
+                
+                
+            </div>
+            <div class="screen" id="fold-wrapper" aria-hidden="true"></div>
+            <button class="btn-debug" id="btn-debug" aria-hidden="true">See Planes</button>
+        </div>
+    </main>
+    <script src="./js/split.js"></script>
+</body>
+
+</html>
